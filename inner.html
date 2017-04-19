@@ -2,144 +2,153 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
+  <header class="header">
     <div class="container">
-        <header class="header">
-            <div class="main_logo">
-                <img src="http://placehold.it/150x100" alt="Главный логотип" width="150" height="100">
-            </div>
-            <nav class="main_navigation">
-                <ul class="main_list">
-                    <li class="main_list_item">
-                        <a class="main_nav_link" href="#">Студия</a>
-                    </li>
-                    <li class="main_list_item">
-                        <a class="main_nav_link" href="#">Клиенты</a>
-                    </li>
-                    <li class="main_list_item">
-                        <a class="main_nav_link" href="#">Магазин</a>
-                    </li>
-                    <li class="main_list_item">
-                        <a class="main_nav_link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="basket_block">
-                <a class="basket" href="#">Корзина</a>
-            </div>
-            <h1 class="page_title">Магазин готовых шаблонов</h1>
-        </header>
+      <div class="main_logo">
+        <img src="http://placehold.it/150x100" alt="Главный логотип" width="150" height="100">
+      </div>
+      <nav class="main_navigation">
+        <ul class="main_list">
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Студия</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Клиенты</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Магазин</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="basket_block">
+        <a class="basket" href="#">Корзина</a>
+      </div>
+      <h1 class="page_title">Магазин готовых шаблонов</h1>
     </div>
-    <main>
-        <div class="container">
-            <section class="left_sidebar">
-                <form action="#" method="post">
-                    <div class="price">
-                        <h3 class="filter_heading">Стоимость:</h3> от 0
-                        <input type="range" min="0" max="15000" step="100">до 15000
-                    </div>
-                    <div class="net_type">
-                        <h3 class="filter_heading">Сетка:</h3>
-                        <input type="radio" name="adaptive" id="adaptive" checked>
-                        <label for="adaptive">Адаптивная</label>
-                        <input type="radio" name="fixed" id="fixed">
-                        <label for="fixed">Фиксированная</label>
-                        <input type="radio" name="rubbish" id="rubbish">
-                        <label for="rubbish">Резиновая</label>
-                    </div>
-                    <div class="specials">
-                        <h3 class="filter_heading">Особенности:</h3>
-                        <input type="checkbox" name="slider" id="slider" checked>
-                        <label for="slider">Слайдер</label>
-                        <input type="checkbox" name="advantage_block" id="advantage_block">
-                        <label for="advantage_block">Блок преимуществ</label>
-                        <input type="checkbox" name="news" id="news" checked>
-                        <label for="news">Новости</label>
-                        <input type="checkbox" name="gallery" id="gallery">
-                        <label for="gallery">Галерея</label>
-                        <input type="checkbox" name="basket_block" id="basket_block">
-                        <label for="basket_block">Корзина</label>
-                    </div>
-                    <button type="submit">Показать</button>
-                </form>
-            </section>
-            <section class="top_sitebar">
-                <h3 class="filter_heading">Сортировать:</h3>
-                <ul class="sort_nav">
-                    <li class="sort_nav_item active"><a class="sort_nav_link">По цене</a>
-                    </li>
-                    <li class="sort_nav_item"><a class="sort_nav_link" href="#">По типу</a>
-                    </li>
-                    <li class="sort_nav_item"><a class="sort_nav_link" href="#">По названию</a>
-                    </li>
-                </ul>
-                <div class="sort_direction">
-                    <a class="sort_direction_up" href="#"></a>
-                    <a class="sort_direction_down" href="#"></a>
-                </div>
-            </section>
-            <section class="product_container_section">
-                <div class="product">
-                    <img src="http://placehold.it/150x100" alt="Sedona" width="150" height="100">
-                </div>
-                <div class="product_info">
-                  <h3 class="product_name">Sedona</h3>
-                    <span>Информационный сайт для туристов</span>
-                    <a class="price_and_shop" href="#">9 900 руб.</a>
-                  </div>
-                <div class="product">
-                    <img src="http://placehold.it/150x100" alt="PINK" width="150" height="100">
-                </div>
-                <div class="product">
-                    <img src="http://placehold.it/150x100" alt="Borodinski" width="150" height="100">
-                </div>
-                <div class="produc">
-                    <img src="http://placehold.it/150x100" alt="MISHKA" width="150" height="100">
-                </div>
-                <div class="product">
-                    <img src="http://placehold.it/150x100" alt="A+" width="150" height="100">
-                </div>
-                <div class="product">
-                    <img src="http://placehold.it/150x100" alt="КВАСТ" width="150" height="100">
-                </div>
-                <div class="paginator">
-                    <ul class="paginator_list">
-                        <li class="paginator_list_item"><a class="paginator_link active">1</a>
-                        </li>
-                        <li class="paginator_list_item"><a class="paginator_link" href="#">2</a>
-                        </li>
-                        <li class="paginator_list_item"><a class="paginator_link" href="#">3</a>
-                        </li>
-                        <li class="paginator_list_item"><a class="paginator_link next_text" href="#">Следующая</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <div class="contacts">
-                <span>Nёrds Design Studio</span>
-                <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    <br> тел. +7(812)275-75-75</p>
-                <a class="btn feedback_link" href="#">Напишите нам</a>
-            </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="left_sidebar">
+        <form action="#" method="post">
+          <div class="price">
+            <label for="price-from">
+От <input type="text" name="from" value="0" id="price-from">
+</label>
+            <label for="price-to">
+До <input type="text" name="to" value="15 000" id="price-to">
+</label>
+            <div class="price-range"></div>
+            <div class="price-common-band"></div>
+            <div class="price-selected-band"></div>
+            <div class="price-slider price_slider-min"></div>
+            <div class="price-slider price_slider-max"></div>
           </div>
-    </main>
-    <div class="container">
-        <footer>
-            <div class="footer_social">
-                <a class="social-btn" href="#">VK</a>
-                <a class="social-btn" href="#">Facebook</a>
-                <a class="social-btn" href="#">Instagram</a>
-            </div>
-            <div class="discount">
-                <b class="discount_title">Давайте дружить, это выгодно!</b>
-                <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
-            </div>
-        </footer>
+          <div class="net_type">
+            <h3 class="filter_heading">Сетка:</h3>
+            <input type="radio" name="net_type_radio" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+            <input type="radio" name="net_type_radio" id="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" name="net_type_radio" id="rubbish">
+            <label for="rubbish">Резиновая</label>
+          </div>
+          <div class="specials">
+            <h3 class="filter_heading">Особенности:</h3>
+            <input type="checkbox" name="slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" name="advantage_block" id="advantage_block">
+            <label for="advantage_block">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" name="basket_block" id="basket_block">
+            <label for="basket_block">Корзина</label>
+          </div>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="top_sitebar">
+        <h3 class="filter_heading">Сортировать:</h3>
+        <ul class="sort_nav">
+          <li class="item_sort active"><button class="sort_button">По цене</button>
+          </li>
+          <li class="item_sort"><button class="sort_button">По типу</button>
+          </li>
+          <li class="item_sort"><button class="sort_button">По названию</button>
+          </li>
+        </ul>
+        <div class="sort_direction">
+          <button type="button" class="sort_button_up"></button>
+          <button type="button" class="sort_button_down"></button>
+        </div>
+      </section>
+      <section class="product_container_section">
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="Sedona" width="150" height="100">
+        </div>
+        <div class="product_info">
+          <h3 class="product_name">Sedona</h3>
+          <p>Информационный сайт для туристов</p>
+          <a class="price_and_shop" href="#">9 900 руб.</a>
+        </div>
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="PINK" width="150" height="100">
+        </div>
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="Borodinski" width="150" height="100">
+        </div>
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="MISHKA" width="150" height="100">
+        </div>
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="A+" width="150" height="100">
+        </div>
+        <div class="product">
+          <img src="http://placehold.it/150x100" alt="КВАСТ" width="150" height="100">
+        </div>
+        <div class="paginator">
+          <ul class="paginator_list">
+            <li class="paginator_list_unit"><a class="paginator_link active">1</a>
+            </li>
+            <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
+            </li>
+            <li class="paginator_list_unit"><a class="paginator_link" href="#">3</a>
+            </li>
+            <li class="paginator_list_unit"><a class="paginator_link next_text" href="#">Следующая</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="contacts">
+        <span>Nёrds Design Studio</span>
+        <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <br> тел. +7(812)275-75-75</p>
+        <a class="btn feedback_link" href="#">Напишите нам</a>
+      </div>
     </div>
+  </main>
+  <div class="container">
+    <footer>
+      <div class="footer_social">
+        <a class="social-btn" href="#">VK</a>
+        <a class="social-btn" href="#">Facebook</a>
+        <a class="social-btn" href="#">Instagram</a>
+      </div>
+      <div class="discount">
+        <b class="discount_title">Давайте дружить, это выгодно!</b>
+        <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
