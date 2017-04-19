@@ -39,12 +39,10 @@
       <section class="left_sidebar">
         <form action="#" method="post">
           <div class="price">
-            <label for="price-from">
-От <input type="text" name="from" value="0" id="price-from">
-</label>
-            <label for="price-to">
-До <input type="text" name="to" value="15 000" id="price-to">
-</label>
+            От <input type="text" name="from" value="0" id="price-from">
+            До <input type="text" name="to" value="15 000" id="price-to">
+            <label for="price-from"></label>
+            <label for="price-to"></label>
             <div class="price-range"></div>
             <div class="price-common-band"></div>
             <div class="price-selected-band"></div>
@@ -79,7 +77,7 @@
       <section class="top_sitebar">
         <h3 class="filter_heading">Сортировать:</h3>
         <ul class="sort_nav">
-          <li class="product_sort active"><button class="sort_button">По цене</button>
+          <li class="product_sort_current"><button class="sort_button">По цене</button>
           </li>
           <li class="product_sort"><button class="sort_button">По типу</button>
           </li>
