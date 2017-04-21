@@ -34,122 +34,119 @@
       <h1 class="page_title">Магазин готовых шаблонов</h1>
     </div>
   </header>
-  <main>
-    <div class="container">
-      <section class="left_sidebar">
-        <form action="#" method="post">
-          <div class="price">
-            <div class="slider_container">
-              <div class="price-range"></div>
-              <div class="price-slider price_slider-min"></div>
-              <div class="price-slider price_slider-max"></div>
-              <div class="price-common-band">
-                <div class="price-selected-band"></div>
-                <div class="price_input">
-                  <label>От<input type='text' name="price_field_from" id="price_from" placeholder="0"></label>
-                  <label>До<input type='text' name="price_field_to" id="price_to" placeholder="15 000"></label>
-                </div>
-              </div>
+  <main class="container">
+    <section class="left_sidebar">
+      <form action="#" method="post">
+        <div class="price">
+          <h3 class="price_heading">Стоимость:</h3>
+          <div class="slider_container">
+            <div class="price-range"></div>
+            <div class="price-slider price_slider-min"></div>
+            <div class="price-slider price_slider-max"></div>
+            <div class="price-common-band">
+              <div class="price-selected-band"></div>
+            </div>
+            <div class="price_input">
+              <label>От<input type='text' name="price_field_from" id="price_from" placeholder="0"></label>
+              <label>До<input type='text' name="price_field_to" id="price_to" placeholder="15 000"></label>
             </div>
           </div>
-          <div class="net_type">
-            <h3 class="filter_heading">Сетка:</h3>
-            <input type="radio" name="net_type_radio" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>
-            <input type="radio" name="net_type_radio" id="fixed">
-            <label for="fixed">Фиксированная</label>
-            <input type="radio" name="net_type_radio" id="rubbish">
-            <label for="rubbish">Резиновая</label>
-          </div>
-          <div class="specials">
-            <h3 class="filter_heading">Особенности:</h3>
-            <input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" name="advantage_block" id="advantage_block">
-            <label for="advantage_block">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" name="basket_block" id="basket_block">
-            <label for="basket_block">Корзина</label>
-          </div>
-          <button type="submit">Показать</button>
-        </form>
-      </section>
-      <section class="top_sitebar">
-        <h3 class="filter_heading">Сортировать:</h3>
-        <ul class="sort_nav">
-          <li class="product_sort_current"><button class="sort_button">По цене</button>
+        </div>
+        <div class="net_type">
+          <h3 class="filter_heading">Сетка:</h3>
+          <input type="radio" name="net_type_radio" id="adaptive" checked>
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" name="net_type_radio" id="fixed">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" name="net_type_radio" id="rubbish">
+          <label for="rubbish">Резиновая</label>
+        </div>
+        <div class="specials">
+          <h3 class="filter_heading">Особенности:</h3>
+          <input type="checkbox" name="slider" id="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" name="advantage_block" id="advantage_block">
+          <label for="advantage_block">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="basket_block" id="basket_block">
+          <label for="basket_block">Корзина</label>
+        </div>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="top_sitebar">
+      <h3 class="filter_heading">Сортировать:</h3>
+      <ul class="sort_nav">
+        <li class="product_sort_current"><button class="sort_button">По цене</button>
+        </li>
+        <li class="product_sort"><button class="sort_button">По типу</button>
+        </li>
+        <li class="product_sort"><button class="sort_button">По названию</button>
+        </li>
+      </ul>
+      <div class="sort_direction">
+        <button type="button" class="sort_button_up"></button>
+        <button type="button" class="sort_button_down"></button>
+      </div>
+    </section>
+    <section class="product_container_section">
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="Sedona" width="150" height="100">
+        <div class="product_info">
+          <h3 class="product_name">Sedona</h3>
+          <p>Информационный сайт для туристов</p>
+          <a class="price_and_shop" href="#">9 900 руб.</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="PINK" width="150" height="100">
+      </div>
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="Borodinski" width="150" height="100">
+      </div>
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="MISHKA" width="150" height="100">
+      </div>
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="A+" width="150" height="100">
+      </div>
+      <div class="product">
+        <img src="http://placehold.it/150x100" alt="КВАСТ" width="150" height="100">
+      </div>
+      <div class="paginator">
+        <ul class="paginator_list">
+          <li class="paginator_list_unit"><a class="paginator_link active">1</a>
           </li>
-          <li class="product_sort"><button class="sort_button">По типу</button>
+          <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
           </li>
-          <li class="product_sort"><button class="sort_button">По названию</button>
+          <li class="paginator_list_unit"><a class="paginator_link" href="#">3</a>
+          </li>
+          <li class="paginator_list_unit"><a class="paginator_link next_text" href="#">Следующая</a>
           </li>
         </ul>
-        <div class="sort_direction">
-          <button type="button" class="sort_button_up"></button>
-          <button type="button" class="sort_button_down"></button>
-        </div>
-      </section>
-      <section class="product_container_section">
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="Sedona" width="150" height="100">
-          <div class="product_info">
-            <h3 class="product_name">Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <a class="price_and_shop" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="PINK" width="150" height="100">
-        </div>
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="Borodinski" width="150" height="100">
-        </div>
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="MISHKA" width="150" height="100">
-        </div>
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="A+" width="150" height="100">
-        </div>
-        <div class="product">
-          <img src="http://placehold.it/150x100" alt="КВАСТ" width="150" height="100">
-        </div>
-        <div class="paginator">
-          <ul class="paginator_list">
-            <li class="paginator_list_unit"><a class="paginator_link active">1</a>
-            </li>
-            <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
-            </li>
-            <li class="paginator_list_unit"><a class="paginator_link" href="#">3</a>
-            </li>
-            <li class="paginator_list_unit"><a class="paginator_link next_text" href="#">Следующая</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class="contacts">
-        <span>Nёrds Design Studio</span>
-        <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <br> тел. +7(812)275-75-75</p>
-        <a class="btn feedback_link" href="#">Напишите нам</a>
       </div>
+    </section>
+    <div class="contacts">
+      <span>Nёrds Design Studio</span>
+      <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <br> тел. +7(812)275-75-75</p>
+      <a class="btn feedback_link" href="#">Напишите нам</a>
     </div>
   </main>
-  <div class="container">
-    <footer>
-      <div class="footer_social">
-        <a class="social-btn" href="#">VK</a>
-        <a class="social-btn" href="#">Facebook</a>
-        <a class="social-btn" href="#">Instagram</a>
-      </div>
-      <div class="discount">
-        <b class="discount_title">Давайте дружить, это выгодно!</b>
-        <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
-      </div>
-    </footer>
-  </div>
+  <footer class="container">
+    <div class="footer_social">
+      <a class="social-btn" href="#">VK</a>
+      <a class="social-btn" href="#">Facebook</a>
+      <a class="social-btn" href="#">Instagram</a>
+    </div>
+    <div class="discount">
+      <b class="discount_title">Давайте дружить, это выгодно!</b>
+      <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </footer>
 </body>
 
 </html>
