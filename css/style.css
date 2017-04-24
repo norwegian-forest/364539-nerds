@@ -3,7 +3,7 @@ body {
   line-height: 24px;
   color: #283136;
   font-weight: normal;
-  font-family: "Roboto", "Arial";
+  font-family: "Roboto", "Arial", "Sans-Serif";
 }
 
 .tagline_title {
@@ -11,7 +11,7 @@ body {
   line-height: 55px;
   color: #000000;
   font-weight: normal;
-  font-family: "Roboto", "Arial";
+  font-family: "Roboto";
 }
 
 .about_us_title {
@@ -19,7 +19,7 @@ body {
   line-height: 45px;
   color: #000000;
   font-weight: normal;
-  font-family: "Roboto", "Arial";
+  font-family: "Roboto";
 }
 
 .price_heading, .filter_heading, .product_name, {
@@ -27,7 +27,7 @@ body {
   line-height: 30px;
   color: #000000;
   font-weight: bold;
-  font-family: "Roboto", "Arial";
+  font-family: "Roboto";
 }
 
 
