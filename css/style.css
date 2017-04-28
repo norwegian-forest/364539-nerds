@@ -25,5 +25,42 @@ body {
   font-weight: bold;
 }
 
+.container {
+  outline: 2px solid red;
+}
 
+.header_container {
+  outline: 2px solid orange;
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.main_menu {
+
+  outline: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_logo {
+
+}
+
+.main_navigation {
+  outline: 2px solid green;
+  width:440px;
+}
+
+.main_list {
+  display:flex;
+  justify-content: space-between;
+}
+
+.tagline {
+  outline: 2px solid green;
+  width:385px;
+  height:280px;
+  margin-top: 70px;
 }
