@@ -64,3 +64,12 @@ body {
   height:280px;
   margin-top: 70px;
 }
+
+.products {
+  outline: 2px solid yellow;
+  display:flex;
+}
+
+.product_item {
+  outline: 2px solid green;
+}
