@@ -76,7 +76,7 @@ body {
   margin-right: 50px;
 }
 
-.main_list_item: last-child {
+.main_list_item:last-child {
   margin-right: 0;
 }
 
