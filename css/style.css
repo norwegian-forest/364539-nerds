@@ -31,45 +31,92 @@ body {
 
 .header_container {
   outline: 2px solid orange;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-left: 140px;
   margin-right: 140px;
 }
 
 .main_menu {
-
   outline: 2px solid yellow;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .main_logo {
-
+  margin-right: 200px;
 }
 
 .main_navigation {
   outline: 2px solid green;
-  width:440px;
+  width: 440px;
 }
 
 .main_list {
-  display:flex;
+  display: flex;
   justify-content: space-between;
+}
+
+.basket_block {
+  margin-left: auto;
 }
 
 .tagline {
   outline: 2px solid green;
-  width:385px;
-  height:280px;
+  width: 385px;
+  height: 280px;
   margin-top: 70px;
 }
 
 .products {
   outline: 2px solid yellow;
-  display:flex;
+  display: flex;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .product_item {
   outline: 2px solid green;
+  width: 300px;
+  min-height: 350px;
+  margin-right: 100px;
 }
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.about_us {
+  width: 660px;
+}
+
+.statistics {
+  width: 360px;
+}
+
+.statistics_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients {
+  margin-left: 140px;
+  margin-right: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_information {
+  width: 310px;
+  min-height: 310px;
+  margin-left: 140px;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+}
+
+.footer_cocial {}
