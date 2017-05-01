@@ -77,7 +77,7 @@ body {
 }
 
 .main_list_item: last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .basket_block {
