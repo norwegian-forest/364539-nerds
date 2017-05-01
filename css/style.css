@@ -35,10 +35,10 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1185px;
+  width: 1160px;
 }
 
-.header_container {
+.header {
   padding-top: 50px;
 }
 
@@ -58,6 +58,8 @@ body {
 .main_list {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main_nav_link {
@@ -73,13 +75,16 @@ body {
   margin-right: 50px;
 }
 
+.main_list_item: last-child {
+  margin-right: 0px;
+}
+
 .basket_block {
   margin-left: auto;
 }
 
 .tagline {
   width: 385px;
-  height: 280px;
   margin-top: 70px;
 }
 
