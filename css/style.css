@@ -280,12 +280,9 @@ header {
 
 .social_container {
   display: flex;
-  align-items: center;
-}
-
-.social_container {
   margin-right: 140px;
 }
+
 
 .discount_title {
   font-size: 36px;
