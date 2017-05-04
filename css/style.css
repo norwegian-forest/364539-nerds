@@ -154,7 +154,6 @@ header {
   justify-content: space-between;
 }
 
-
 .footer_social {
   margin-right: 140px;
 }
@@ -167,10 +166,9 @@ header {
   color: #000000;
   font-weight: normal;
   font-family: Roboto;
-  padding-left: 220px;
+  padding-left: 214px;
   padding-right: 214px;
   padding-top: 75px;
-
 }
 
 .main_wrapper {
@@ -221,7 +219,7 @@ header {
   display: flex;
   list-style: none;
   margin-right: 50px;
-  margin-top:0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -230,7 +228,7 @@ header {
 }
 
 .product_sort:last-child {
- margin:0;
+  margin: 0;
 }
 
 .product_container_section {
@@ -260,16 +258,16 @@ header {
   height: 420px;
   background-image: url("../img/main_map.jpg");
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: #f1efe8;
 }
 
 .contacts_information {
   width: 320px;
   padding-top: 54px;
-  padding-left: 51px;
+  padding-left: 50px;
   padding-bottom: 50px;
+  padding-right: 50px;
   background-color: white;
-
 }
 
 .footer_container {
@@ -282,7 +280,6 @@ header {
   display: flex;
   margin-right: 140px;
 }
-
 
 .discount_title {
   font-size: 36px;
