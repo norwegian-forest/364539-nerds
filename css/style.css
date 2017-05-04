@@ -92,9 +92,12 @@ header {
   font-family: Roboto
 }
 
+.main_list {
+  margin-top: 25px;
+}
+
 .main_list_item {
   margin-right: 45px;
-  padding-top: 25px;
 }
 
 .main_list_item:last-child {
@@ -151,15 +154,6 @@ header {
   justify-content: space-between;
 }
 
-.contacts_information {
-  width: 310px;
-  height: 320px;
-}
-
-.footer_container {
-  display: flex;
-  align-items: center;
-}
 
 .footer_social {
   margin-right: 140px;
@@ -174,7 +168,9 @@ header {
   font-weight: normal;
   font-family: Roboto;
   padding-left: 220px;
+  padding-right: 214px;
   padding-top: 75px;
+
 }
 
 .main_wrapper {
@@ -196,8 +192,6 @@ header {
 
 .sidebar_form {
   width: 260px;
-  display: flex;
-  flex-direction: column;
 }
 
 .price {
@@ -226,7 +220,8 @@ header {
 .sort_nav {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin-right: 50px;
+  margin-top:0;
   padding: 0;
 }
 
@@ -235,7 +230,7 @@ header {
 }
 
 .product_sort:last-child {
-  margin-right: 50px;
+ margin:0;
 }
 
 .product_container_section {
@@ -263,13 +258,18 @@ header {
   padding-top: 55px;
   padding-left: 140px;
   height: 420px;
-  background-image: url("../img/main_map.jpg")
+  background-image: url("../img/main_map.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
 }
 
 .contacts_information {
+  width: 320px;
   padding-top: 54px;
   padding-left: 51px;
+  padding-bottom: 50px;
   background-color: white;
+
 }
 
 .footer_container {
