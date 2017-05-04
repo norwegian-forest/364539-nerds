@@ -13,70 +13,66 @@
     <div class="container">
       <div class="main_menu">
         <img class="main_logo" src="img/nerds-logo.png" alt="Главный логотип" width="160" height="65">
-        <div class="main_navigation">
-          <ul class="main_list">
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Студия</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Клиенты</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Магазин</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main_list">
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Студия</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Клиенты</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link main_nav_link_active" href="#">Магазин</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Контакты</a>
+          </li>
+        </ul>
         <a class="basket" href="#">Корзина</a>
       </div>
       <h1 class="page_title">Магазин готовых шаблонов</h1>
     </div>
   </header>
   <main class="container main_flex_container">
-    <section class="left_sidebar">
-      <form class="sidebar_form" action="#" method="post">
-        <div class="price">
-          <h3 class="price_heading">Стоимость:</h3>
-          <div class="slider_container">
-            <div class="price-range"></div>
-            <div class="price-slider price_slider-min"></div>
-            <div class="price-slider price_slider-max"></div>
-            <div class="price-common-band">
-              <div class="price-selected-band"></div>
-            </div>
-            <div class="price_input">
-              <label>От<input type='text' name="price_field_from" id="price_from" placeholder="0"></label>
-              <label>До<input type='text' name="price_field_to" id="price_to" placeholder="15 000"></label>
-            </div>
+    <form class="sidebar_form" action="#" method="post">
+      <div class="price">
+        <h3 class="price_heading">Стоимость:</h3>
+        <div class="slider_container">
+          <div class="price-range"></div>
+          <div class="price-slider price_slider-min"></div>
+          <div class="price-slider price_slider-max"></div>
+          <div class="price-common-band">
+            <div class="price-selected-band"></div>
+          </div>
+          <div class="price_input">
+            <label>От<input type='text' name="price_field_from" id="price_from" placeholder="0"></label>
+            <label>До<input type='text' name="price_field_to" id="price_to" placeholder="15 000"></label>
           </div>
         </div>
-        <div class="net_type">
-          <h3 class="filter_heading">Сетка:</h3>
-          <p><input type="radio" name="net_type_radio" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label></p>
-          <p><input type="radio" name="net_type_radio" id="fixed">
-            <label for="fixed">Фиксированная</label></p>
-          <p><input type="radio" name="net_type_radio" id="rubbish">
-            <label for="rubbish">Резиновая</label></p>
-        </div>
-        <div class="specials">
-          <h3 class="filter_heading">Особенности:</h3>
-          <p><input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label></p>
-          <p><input type="checkbox" name="advantage_block" id="advantage_block">
-            <label for="advantage_block">Блок преимуществ</label></p>
-          <p><input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label></p>
-          <p><input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label></p>
-          <p><input type="checkbox" name="basket_block" id="basket_block">
-            <label for="basket_block">Корзина</label></p>
-        </div>
-        <button type="submit">Показать</button>
-      </form>
       </div>
+      <div class="net_type">
+        <h3 class="filter_heading net_filter_heading">Сетка:</h3>
+        <input class="form_input" type="radio" name="net_type_radio" id="adaptive" checked>
+        <label class="radio_label" for="adaptive">Адаптивная</label>
+        <input class="form_input" type="radio" name="net_type_radio" id="fixed">
+        <label class="radio_label" for="fixed">Фиксированная</label>
+        <input class="form_input" type="radio" name="net_type_radio" id="rubbish">
+        <label class="radio_label" for="rubbish">Резиновая</label>
+      </div>
+      <div class="specials">
+        <h3 class="filter_heading specials_filter_heading">Особенности:</h3>
+        <input class="form_input" type="checkbox" name="slider" id="slider" checked>
+        <label class="checkbox_label" for="slider">Слайдер</label>
+        <input class="form_input" type="checkbox" name="advantage_block" id="advantage_block">
+        <label class="checkbox_label" for="advantage_block">Блок преимуществ</label>
+        <input class="form_input" type="checkbox" name="news" id="news" checked>
+        <label class="checkbox_label" for="news">Новости</label>
+        <input class="form_input" type="checkbox" name="gallery" id="gallery">
+        <label class="checkbox_label" for="gallery">Галерея</label>
+        <input class="form_input" type="checkbox" name="basket_block" id="basket_block">
+        <label class="checkbox_label" for="basket_block">Корзина</label>
+      </div>
+      <button type="submit">Показать</button>
+    </form>
     </section>
     <div class="main_wrapper">
       <div class="top_sitebar_container">
@@ -119,31 +115,32 @@
           <img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="625">
         </div>
       </section>
-      <div class="paginator">
-        <ul class="paginator_list">
-          <li class="paginator_list_unit"><a class="paginator_link active">1</a>
-          </li>
-          <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
-          </li>
-          <li class="paginator_list_unit"><a class="paginator_link" href="#">3</a>
-          </li>
-          <li class="paginator_list_unit"><a class="paginator_link next_text" href="#">Следующая</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="paginator_list">
+        <li class="paginator_list_unit"><a class="paginator_link active">1</a>
+        </li>
+        <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
+        </li>
+        <li class="paginator_list_unit"><a class="paginator_link" href="#">3</a>
+        </li>
+        <li class="paginator_list_unit"><a class="paginator_link next_text" href="#">Следующая</a>
+        </li>
+      </ul>
+    </div>
   </main>
   <div class="сontacts">
     <div class="contacts_information">
-      <span>Nёrds Design Studio</span>
+      <span class="contacts_heading">Nёrds Design Studio</span>
       <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <br> тел. +7(812)275-75-75</p>
       <a class="btn feedback_link" href="#">Напишите нам</a>
     </div>
   </div>
-  <footer class="container">
-    <a class="social-btn" href="#">VK</a>
-    <a class="social-btn" href="#">Facebook</a>
-    <a class="social-btn" href="#">Instagram</a>
+  <footer class="container footer_container">
+    <div class="social_container">
+      <a class="social-btn" href="#">VK</a>
+      <a class="social-btn" href="#">Facebook</a>
+      <a class="social-btn" href="#">Instagram</a>
+    </div>
     <div class="discount">
       <b class="discount_title">Давайте дружить, это выгодно!</b>
       <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
