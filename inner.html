@@ -6,6 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -36,19 +37,19 @@
     <form class="sidebar_form" action="#" method="post">
       <h3 class="price_heading">Стоимость:</h3>
       <div class="range-filter">
-         <div class="range-controls">
-           <div class="scale">
-             <div class="bar"></div>
-           </div>
-           <div class="toggle toggle-min"></div>
-         <div class="toggle toggle-max"></div>
-         </div>
-         <div class="price-controls">
-           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
 
-         </div>
-       </div>
+        </div>
+      </div>
       <div class="net_type">
         <h3 class="filter_heading net_filter_heading">Сетка:</h3>
         <input class="form_input" type="radio" name="net_type_radio" id="adaptive" checked>
@@ -94,7 +95,7 @@
           <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="625">
           <div class="product_info">
             <h3 class="product_name">Sedona</h3>
-            <p>Информационный сайт для туристов</p>
+            <p class="product_description">Информационный сайт для туристов</p>
             <a class="price_and_shop" href="#">9 900 руб.</a>
           </div>
         </div>
@@ -115,7 +116,7 @@
         </div>
       </section>
       <ul class="paginator_list">
-        <li class="paginator_list_unit"><a class="paginator_link active">1</a>
+        <li class="paginator_list_unit"><a class="paginator_link paginator_link_active">1</a>
         </li>
         <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
         </li>
@@ -127,11 +128,13 @@
     </div>
   </main>
   <div class="сontacts">
-    <div class="contacts_information">
-      <span>Nёrds Design Studio</span>
-      <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        <br> тел. +7(812)275-75-75</p>
-      <a class="btn feedback_link" href="#">Напишите нам</a>
+    <div class="container">
+      <div class="contacts_information">
+        <span>Nёrds Design Studio</span>
+        <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <br> тел. +7(812)275-75-75</p>
+        <a class="btn feedback_link" href="#">Напишите нам</a>
+      </div>
     </div>
   </div>
   <footer class="container footer_container">
@@ -145,6 +148,29 @@
       <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
+  <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="feedback">
+      <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="feedback_title">Напишите нам</h2>
+
+      <div class="feedback_info">
+        <div class="feedback_block">
+          <label for="name">Ваше имя:</label>
+          <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="name">
+        </div>
+        <div class="feedback_block">
+          <label for="mail">Ваш e-mail:</label>
+          <input type="email" placeholder="Для отправки ответа" name="mail" id="mail">
+        </div>
+      </div>
+      <div class="letter">
+        <label for="letter">Текст письма:</label>
+        <textarea id="letter" name="leter" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="form_button btn" type="submit">Отправить</button>
+    </div>
+  </form>
+
 </body>
 
 </html>

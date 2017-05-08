@@ -6,10 +6,11 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="index_header">
     <div class="container">
       <div class="main_menu">
         <a class="main_logo"></a>
@@ -39,7 +40,21 @@
           <div class="slide">
             <div class="slide-text">
               <div class="slide-title">Долго, дорого, скрупулезно</div>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <p class="slide_description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любим математику как никто другой</div>
+              <p class="slide_description">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только ночь, только хардкор.</div>
+              <p class="slide_description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
@@ -59,13 +74,13 @@
         <div class="product_item">
           <img class="item_picture" src="img/illustration-2.jpg" alt="Мобильные приложения" width="300" height="145">
           <b class="product_item_name">Приложения</b>
-          <p class="product_item_info">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p class="product_tagline">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn product_btn app_btn" href=#>Заказать</a>
         </div>
         <div class="product_item">
           <img class="item_picture" src="img/illustration-3.jpg" alt="Презентации" width="300" height="145">
           <b class="product_item_name">Презентации</b>
-          <p class="product_item_info">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <p class="product_tagline">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn product_btn presentation_btn" href=#>Заказать</a>
         </div>
       </section>
@@ -90,32 +105,34 @@
           <img src="img/nerds-illustration.png" alt="Цветной логотип" width="360" height="205">
           <b class="statistics_title">C 2004 года любим точность во всем:</b>
           <div class="statistics_container">
-            <div class="statistics_numbers"> <span class="statistic_level">146</span><span class="percent">%</span>
+            <div class="statistics_numbers"> <span class="statistic_level">146</span>
               <p class="statistic_info">Уровень самоотдачи</p>
             </div>
-            <div class="statistics_numbers"> <span class="statistic_level">100</span><span class="percent">%</span>
+            <div class="statistics_numbers"> <span class="statistic_level">100</span>
               <p class="statistic_info">Соблюдение сроков</p>
             </div>
-            <div class="statistics_numbers"> <span class="statistic_level">50</span> <span class="percent">%</span>
+            <div class="statistics_numbers"> <span class="statistic_level">50</span>
               <p class="statistic_info">Минимальная предоплата</p>
             </div>
           </div>
         </div>
       </section>
       <section class="clients">
-        <a class="clients_link"></a>
-        <a class="clients_link"></a>
-        <a class="clients_link"></a>
-        <a class="clients_link"></a>
+        <a class="htmlacademy_link"></a>
+        <a class="barbershop_link"></a>
+        <a class="pink_link"></a>
+        <a class="mishka_link"></a>
       </section>
     </div>
   </main>
   <div class="сontacts">
-    <div class="contacts_information">
-      <span>Nёrds Design Studio</span>
-      <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        <br> тел. +7(812)275-75-75</p>
-      <a class="btn feedback_link" href="#">Напишите нам</a>
+    <div class="container">
+      <div class="contacts_information">
+        <span class="contacts_heading">Nёrds Design Studio</span>
+        <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <br> тел. +7(812)275-75-75</p>
+        <a class="btn feedback_link" href="#">Напишите нам</a>
+      </div>
     </div>
   </div>
   <footer class="container footer_container">
@@ -129,6 +146,74 @@
       <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
+
+  <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="feedback">
+      <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="feedback_title">Напишите нам</h2>
+
+      <div class="feedback_info">
+        <div class="feedback_block">
+          <label for="name">Ваше имя:</label>
+          <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="name">
+        </div>
+        <div class="feedback_block">
+          <label for="mail">Ваш e-mail:</label>
+          <input type="email" placeholder="Для отправки ответа" name="mail" id="mail">
+        </div>
+      </div>
+      <div class="letter">
+        <label for="letter">Текст письма:</label>
+        <textarea id="letter" name="leter" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="form_button btn" type="submit">Отправить</button>
+
+  </form>
+  </div>
+
+  <script>
+    var link = document.querySelector(".feedback_link");
+
+    var popup = document.querySelector(".feedback");
+    var close = popup.querySelector(".feedback_close");
+
+    var form = popup.querySelector(".form_button");
+    var login = popup.querySelector("[name=name]");
+    var mail = popup.querySelector("[name=mail]");
+
+    var storage = localStorage.getItem(".feedback_link");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("feedback_show");
+      login.focus();
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("feedback_show");
+      popup.classList.remove("feedback_error");
+    });
+
+    form.addEventListener("click", function(event) {
+      if (!name.value && !mail.value) {
+        event.preventDefault();
+        popup.classList.remove("feedback_error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("feedback_error");
+      }
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("feedback_show")) {
+          popup.classList.remove("feedback_show");
+          popup.classList.remove("feedback_error");
+        }
+      }
+    });
+  </script>
+
 </body>
 
 </html>
