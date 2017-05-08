@@ -34,21 +34,21 @@
   </header>
   <main class="container main_flex_container">
     <form class="sidebar_form" action="#" method="post">
-      <div class="price">
-        <h3 class="price_heading">Стоимость:</h3>
-        <div class="slider_container">
-          <div class="price-range"></div>
-          <div class="price-slider price_slider-min"></div>
-          <div class="price-slider price_slider-max"></div>
-          <div class="price-common-band">
-            <div class="price-selected-band"></div>
-          </div>
-          <div class="price_input">
-            <label>От<input type='text' name="price_field_from" id="price_from" placeholder="0"></label>
-            <label>До<input type='text' name="price_field_to" id="price_to" placeholder="15 000"></label>
-          </div>
-        </div>
-      </div>
+      <h3 class="price_heading">Стоимость:</h3>
+      <div class="range-filter">
+         <div class="range-controls">
+           <div class="scale">
+             <div class="bar"></div>
+           </div>
+           <div class="toggle toggle-min"></div>
+         <div class="toggle toggle-max"></div>
+         </div>
+         <div class="price-controls">
+           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+
+         </div>
+       </div>
       <div class="net_type">
         <h3 class="filter_heading net_filter_heading">Сетка:</h3>
         <input class="form_input" type="radio" name="net_type_radio" id="adaptive" checked>
@@ -85,8 +85,8 @@
           </li>
         </ul>
         <div class="sort_direction">
-          <a class="direction_sort_up" href="#"></a>
           <button type="button" class="direction_sort_down"></button>
+          <button type="button" class="direction_sort_up"></button>
         </div>
       </div>
       <section class="product_container_section">
