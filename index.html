@@ -13,7 +13,7 @@
   <header class="index_header">
     <div class="container">
       <div class="main_menu">
-        <a class="main_logo"></a>
+        <a class="main_logo" href="file:///Users/evgenijvojnilo/Desktop/364539-nerds/index.html"></a>
         <ul class="main_list">
           <li class="main_list_item">
             <a class="main_nav_link" href="#">Студия</a>
@@ -30,30 +30,31 @@
         </ul>
         <a class="basket" href="#">Корзина</a>
       </div>
+
       <div class="slider">
-        <div class="slider-controls">
+        <div class="slider_controls">
           <i class="active"></i>
           <i></i>
           <i></i>
         </div>
         <div class="slides">
           <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Долго, дорого, скрупулезно</div>
-              <p class="slide_description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <div class="slide_text">
+              <div class="slide_title">Долго, дорого,<br> скрупулезно</div>
+              <p class="slide_description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
           <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Любим математику как никто другой</div>
+            <div class="slide_text">
+              <div class="slide_title">Любим математику как никто другой</div>
               <p class="slide_description">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
           <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Только ночь, только хардкор.</div>
+            <div class="slide_text">
+              <div class="slide_title">Только ночь,<br> только хардкор.</div>
               <p class="slide_description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
@@ -118,7 +119,7 @@
         </div>
       </section>
       <section class="clients">
-        <a class="htmlacademy_link"></a>
+        <a class="htmlacademy_link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
         <a class="barbershop_link"></a>
         <a class="pink_link"></a>
         <a class="mishka_link"></a>
@@ -129,8 +130,10 @@
     <div class="container">
       <div class="contacts_information">
         <span class="contacts_heading">Nёrds Design Studio</span>
-        <p class="contact_adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <br> тел. +7(812)275-75-75</p>
+        <p class="contact_adress">191186,
+          Санкт-Петербург,<br>
+           ул. Б. Конюшенная, д. 19/8</p>
+           <p class="telephone">тел. +7(812)275-75-75</p>
         <a class="btn feedback_link" href="#">Напишите нам</a>
       </div>
     </div>
@@ -148,7 +151,6 @@
   </footer>
 
   <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="feedback">
       <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="feedback_title">Напишите нам</h2>
 
@@ -167,14 +169,12 @@
         <textarea id="letter" name="leter" placeholder="В свободной форме"></textarea>
       </div>
       <button class="form_button btn" type="submit">Отправить</button>
-
   </form>
-  </div>
 
   <script>
     var link = document.querySelector(".feedback_link");
 
-    var popup = document.querySelector(".feedback");
+    var popup = document.querySelector(".feedback_form");
     var close = popup.querySelector(".feedback_close");
 
     var form = popup.querySelector(".form_button");
