@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
@@ -13,21 +13,21 @@
   <header class="header_inner">
     <div class="container">
       <div class="main_menu">
-        <a class="main_logo" href="file:///Users/evgenijvojnilo/Desktop/364539-nerds/index.html"></a>
-          <ul class="main_list">
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Студия</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Клиенты</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link_active" href="file:///Users/evgenijvojnilo/Desktop/364539-nerds/inner.html">Магазин</a>
-            </li>
-            <li class="main_list_item">
-              <a class="main_nav_link" href="#">Контакты</a>
-            </li>
-          </ul>
+        <a class="main_logo" href="index.html"></a>
+        <ul class="main_list">
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Студия</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Клиенты</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link_active" href="inner.html">Магазин</a>
+          </li>
+          <li class="main_list_item">
+            <a class="main_nav_link" href="#">Контакты</a>
+          </li>
+        </ul>
         <a class="basket" href="#">Корзина</a>
       </div>
       <h1 class="page_title">Магазин готовых шаблонов</h1>
@@ -36,17 +36,17 @@
   <main class="container main_flex_container">
     <form class="sidebar_form" action="#" method="post">
       <h3 class="price_heading">Стоимость:</h3>
-      <div class="range-filter">
-        <div class="range-controls">
+      <div class="range_filter">
+        <div class="range_controls">
           <div class="scale">
             <div class="bar"></div>
           </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+          <div class="toggle toggle_min"></div>
+          <div class="toggle toggle_max"></div>
         </div>
-        <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        <div class="price_controls">
+          <label class="min_price">от <input name="min_price" type="text" value="0"></label>
+          <label class="max_price">до <input name="max_price" type="text" value="15 000"></label>
 
         </div>
       </div>
@@ -91,32 +91,69 @@
         </div>
       </div>
       <section class="product_container_section">
-        <div class="product">
-          <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="580">
+          </a>
           <div class="product_info">
             <h3 class="product_name">Sedona</h3>
             <p class="product_description">Информационный сайт для туристов</p>
-            <a class="price_and_shop" href="#">9 900 руб.</a>
+            <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
-        <div class="product">
-          <img src="img/img-pink.jpg" alt="PINK" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-pink.jpg" alt="PINK" width="360" height="580">
+            <div class="product_info">
+          </a>
+          <h3 class="product_name">Pink App</h3>
+          <p class="product_description">Продуктовый лендинг приложения для iOS и Android</p>
+          <button class="price_and_shop">9 900 руб.</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="580">
+          </a>
+          <div class="product_info">
+            <h3 class="product_name">Barbershop</h3>
+            <p class="product_description">Сайт салона красоты. Для мужчин, да.</p>
+            <button class="price_and_shop">9 900 руб.</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/img-mishka.jpg" alt="MISHKA" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-mishka.jpg" alt="MISHKA" width="360" height="580">
+          </a>
+          <div class="product_info">
+            <h3 class="product_name">Mishka</h3>
+            <p class="product_description">Интернет-магазин вязаных игрушек</p>
+            <button class="price_and_shop">9 900 руб.</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/img-aplus.jpg" alt="A+" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-aplus.jpg" alt="A+" width="360" height="580">
+          </a>
+          <div class="product_info">
+            <h3 class="product_name">A PLUS</h3>
+            <p class="product_description">Лендинг курсов повышения квалификации</p>
+            <button class="price_and_shop">9 900 руб.</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="625">
+        <div class="item_wrap">
+          <a class="product">
+            <img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="580">
+          </a>
+          <div class="product_info">
+            <h3 class="product_name">Кваст</h3>
+            <p class="product_description">Промо-сайт производителя крафтового кваса</p>
+            <button class="price_and_shop">9 900 руб.</button>
+          </div>
         </div>
       </section>
       <ul class="paginator_list">
-        <li class="paginator_list_unit"><a class="paginator_link paginator_link_active">1</a>
+        <li class="paginator_list_unit"><a class="paginator_link_active">1</a>
         </li>
         <li class="paginator_list_unit"><a class="paginator_link" href="#">2</a>
         </li>
@@ -131,26 +168,25 @@
     <div class="container">
       <div class="contacts_information">
         <span class="contacts_heading">Nёrds Design Studio</span>
-        <p class="contact_adress">191186,
-          Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8</p>
-           <p class="telephone">тел. +7(812)275-75-75</p>
+        <p class="contact_adress">191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="telephone">тел. +7 (812) 275-75-75</p>
         <a class="btn feedback_link" href="#">Напишите нам</a>
       </div>
     </div>
   </div>
   <footer class="container footer_container">
     <div class="social_container">
-      <a class="social-btn vk" href="#"></a>
-      <a class="social-btn fb" href="#"></a>
-      <a class="social-btn inst" href="#"></a>
+      <a class="social_btn vk" href="#"></a>
+      <a class="social_btn fb" href="#"></a>
+      <a class="social_btn inst" href="#"></a>
     </div>
     <div class="discount">
       <b class="discount_title">Давайте дружить, это выгодно!</b>
       <p class="discount_info">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  <div <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
+  <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
     <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="feedback_title">Напишите нам</h2>
 
@@ -169,51 +205,51 @@
       <textarea id="letter" name="leter" placeholder="В свободной форме"></textarea>
     </div>
     <button class="form_button btn" type="submit">Отправить</button>
-    </form>
+  </form>
 
 
-    <script>
-      var link = document.querySelector(".feedback_link");
+  <script>
+    var link = document.querySelector(".feedback_link");
 
-      var popup = document.querySelector(".feedback_form");
-      var close = popup.querySelector(".feedback_close");
+    var popup = document.querySelector(".feedback_form");
+    var close = popup.querySelector(".feedback_close");
 
-      var form = popup.querySelector(".form_button");
-      var login = popup.querySelector("[name=name]");
-      var mail = popup.querySelector("[name=mail]");
+    var form = popup.querySelector(".form_button");
+    var login = popup.querySelector("[name=name]");
+    var mail = popup.querySelector("[name=mail]");
 
-      var storage = localStorage.getItem(".feedback_link");
+    var storage = localStorage.getItem(".feedback_link");
 
-      link.addEventListener("click", function(event) {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("feedback_show");
+      login.focus();
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("feedback_show");
+      popup.classList.remove("feedback_error");
+    });
+
+    form.addEventListener("click", function(event) {
+      if (!name.value && !mail.value) {
         event.preventDefault();
-        popup.classList.add("feedback_show");
-        login.focus();
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("feedback_show");
         popup.classList.remove("feedback_error");
-      });
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("feedback_error");
+      }
+    });
 
-      form.addEventListener("click", function(event) {
-        if (!name.value && !mail.value) {
-          event.preventDefault();
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("feedback_show")) {
+          popup.classList.remove("feedback_show");
           popup.classList.remove("feedback_error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("feedback_error");
         }
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("feedback_show")) {
-            popup.classList.remove("feedback_show");
-            popup.classList.remove("feedback_error");
-          }
-        }
-      });
-    </script>
+      }
+    });
+  </script>
 
 </body>
 
