@@ -1305,6 +1305,7 @@ header {
   padding-left: 100px;
   padding-right: 100px;
   box-shadow: 3px 6px 30px -2px rgba(0, 0, 0, 0.3);
+  resize: none;
 }
 
 .feedback_block {
@@ -1361,6 +1362,10 @@ header {
   background-color: #ffeeee;
 }
 
+textarea {
+  resize: none;
+}
+
 .feedback_form input, .letter textarea {
   width: 360px;
   height: 53px;
@@ -1376,9 +1381,6 @@ header {
   outline: none;
   color: #b4b9bb;
   padding-top: 10px;
-}
-
-.textarea {
   resize: none;
 }
 
@@ -1389,6 +1391,7 @@ header {
 .feedback_form input:focus, .letter textarea:focus {
   border: 2px solid #000000;
   color: #000000;
+  resize: none;
 }
 
 .feedback_form input:invalid {
@@ -1399,6 +1402,7 @@ header {
 .feedback_form .letter textarea {
   width: 100%;
   height: 120px;
+  resize: none;
 }
 
 .form_button {
