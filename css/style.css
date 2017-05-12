@@ -1378,6 +1378,10 @@ header {
   padding-top: 10px;
 }
 
+.textarea {
+  resize: none;
+}
+
 .feedback_form input:hover, .letter textarea:hover {
   border: 2px solid #b4b9bb;
 }
