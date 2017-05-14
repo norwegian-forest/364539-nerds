@@ -356,7 +356,7 @@ body {
 
 .clients {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
 }
@@ -386,7 +386,7 @@ body {
 .main_flex_container {
   display: flex;
   padding-top: 54px;
-  padding-bottom: 70px;
+  padding-bottom: 74px;
 }
 
 .left_sidebar {
@@ -474,7 +474,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .product_info {
@@ -482,11 +482,10 @@ body {
   background-color: #eeeeee;
   bottom: 7px;
   left: 0px;
-  padding-bottom: 45px;
-  padding-top: 29px;
+  padding-bottom: 47px;
+  padding-top: 28px;
   padding-left: 80px;
   padding-right: 80px;
-  display: none;
 }
 
 .product_name {
@@ -573,15 +572,15 @@ body {
 }
 
 .paginator_list_unit {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .paginator_link {
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   padding-top: 13px;
   padding-bottom: 14px;
   padding-right: 22px;
@@ -603,19 +602,19 @@ body {
 .paginator_link_active {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 18px;
   padding-left: 18px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .next_text {
-  padding-right: 69px;
+  padding-right: 78px;
   padding-left: 78px;
 }
 
@@ -626,13 +625,14 @@ body {
   background-color: #f1efe8;
 }
 
-iframe {
+.map_image {
   background-image: url("../img/main_map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 420px;
+  height: 415px;
   width: 100%;
-  margin-top: -365px;
+  position: absolute;
+  margin-top: -55px;
 }
 
 .contact_adress {
@@ -1290,6 +1290,7 @@ iframe {
 }
 
 .feedback_form {
+  z-index: 2;
   display: none;
   flex-direction: column;
   justify-content: space-between;

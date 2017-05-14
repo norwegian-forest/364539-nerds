@@ -38,3 +38,21 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+function initialize() {
+  var mapOptions = {
+    scrollwheel: false,
+    zoom: 17,
+    center: new google.maps.LatLng(59.9389678, 30.320000)
+  }
+  var map = new google.maps.Map(document.getElementById("map"),
+    mapOptions);
+  var image = 'img/map-marker.png';
+  var LatLng = new google.maps.LatLng(59.9387100, 30.323800);
+  var beachMarker = new google.maps.Marker({
+    position: LatLng,
+    map: map,
+    icon: image
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
