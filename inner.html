@@ -92,61 +92,49 @@
       </div>
       <section class="product_container_section">
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="580">
-          </a>
           <div class="product_info">
-            <h3 class="product_name">Sedona</h3>
+            <a href="#" class="product_name">Sedona</a>
             <p class="product_description">Информационный сайт для туристов</p>
             <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-pink.jpg" alt="PINK" width="360" height="580">
-            </a>
-            <div class="product_info">
-          <h3 class="product_name">Pink App</h3>
-          <p class="product_description">Продуктовый лендинг приложения для iOS и Android</p>
-          <button class="price_and_shop">9 900 руб.</button>
+          <div class="product_info">
+            <a href="#" class="product_name">Pink App</a>
+            <p class="product_description">Продуктовый лендинг приложения для iOS и Android</p>
+            <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="580">
-          </a>
           <div class="product_info">
-            <h3 class="product_name">Barbershop</h3>
+            <a href="#" class="product_name">Barbershop</a>
             <p class="product_description">Сайт салона красоты. Для мужчин, да.</p>
             <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-mishka.jpg" alt="MISHKA" width="360" height="580">
-          </a>
           <div class="product_info">
-            <h3 class="product_name">Mishka</h3>
+            <a href="#" class="product_name">Mishka</a>
             <p class="product_description">Интернет-магазин вязаных игрушек</p>
             <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-aplus.jpg" alt="A+" width="360" height="580">
-          </a>
           <div class="product_info">
-            <h3 class="product_name">A PLUS</h3>
+            <a href="#" class="product_name">A PLUS</a>
             <p class="product_description">Лендинг курсов повышения квалификации</p>
             <button class="price_and_shop">9 900 руб.</button>
           </div>
         </div>
         <div class="item_wrap">
-          <a href="#" class="product">
             <img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="580">
-          </a>
           <div class="product_info">
-            <h3 class="product_name">Кваст</h3>
+            <a href="#" class="product_name">Кваст</a>
             <p class="product_description">Промо-сайт производителя крафтового кваса</p>
             <button class="price_and_shop">9 900 руб.</button>
           </div>
@@ -168,8 +156,8 @@
     <div class="container">
       <div class="contacts_information">
         <span class="contacts_heading">Nёrds Design Studio</span>
-        <p class="contact_adress">191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact_adress">191186, Санкт-Петербург</p>
+        <p class="contact_street">ул. Б. Конюшенная, д. 19/8</p>
         <p class="telephone">тел. +7 (812) 275-75-75</p>
         <a class="btn feedback_link" href="#">Напишите нам</a>
       </div>
@@ -206,50 +194,7 @@
     </div>
     <button class="form_button btn" type="submit">Отправить</button>
   </form>
-
-
-  <script>
-    var link = document.querySelector(".feedback_link");
-
-    var popup = document.querySelector(".feedback_form");
-    var close = popup.querySelector(".feedback_close");
-
-    var form = popup.querySelector(".form_button");
-    var login = popup.querySelector("[name=name]");
-    var mail = popup.querySelector("[name=mail]");
-
-    var storage = localStorage.getItem(".feedback_link");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("feedback_show");
-      login.focus();
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("feedback_show");
-      popup.classList.remove("feedback_error");
-    });
-
-    form.addEventListener("click", function(event) {
-      if (!name.value && !mail.value) {
-        event.preventDefault();
-        popup.classList.remove("feedback_error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("feedback_error");
-      }
-    });
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("feedback_show")) {
-          popup.classList.remove("feedback_show");
-          popup.classList.remove("feedback_error");
-        }
-      }
-    });
-  </script>
+    <script src="js/javascript.js"></script>
 
 </body>
 

@@ -18,6 +18,7 @@ body {
 
 .index_header {
   background-color: #eeeeee;
+  padding-top: 50px;
 }
 
 .tagline_title {
@@ -84,13 +85,10 @@ body {
   width: 1160px;
 }
 
-header {
-  padding-top: 50px;
-}
-
 .header_inner {
   background-color: #eeeeee;
   padding-bottom: 109px;
+  padding-top: 50px;
 }
 
 .main_menu {
@@ -485,15 +483,18 @@ header {
   bottom: 7px;
   left: 0px;
   padding-bottom: 45px;
-  padding-top: 8px;
+  padding-top: 29px;
   padding-left: 80px;
   padding-right: 80px;
   display: none;
 }
 
 .product_name {
+  display: block;
   text-align: center;
   font-size: 18px;
+  color: #000000;
+  font-weight: bold;
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -524,7 +525,7 @@ header {
   box-shadow: 0 0 5px;
 }
 
-.product::before {
+.item_wrap::before {
   display: block;
   background-image: url("../img/nerds_spritesheet.png");
   background-position: -5px -205px;
@@ -622,16 +623,30 @@ header {
   padding-top: 53px;
   height: 415px;
   background-position: 50% 50%;
+  background-color: #f1efe8;
+}
+
+iframe {
   background-image: url("../img/main_map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f1efe8;
+  height: 420px;
+  width: 100%;
+  margin-top: -365px;
 }
 
 .contact_adress {
   color: #666666;
-  margin-bottom: 13px;
+  margin-bottom: 0px;
   line-height: 18px;
+}
+
+.contact_street {
+  color: #666666;
+  line-height: 18px;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 13px;
 }
 
 .contacts_information {
@@ -641,6 +656,8 @@ header {
   padding-bottom: 48px;
   padding-right: 49px;
   background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts_heading {
@@ -687,7 +704,7 @@ header {
 
 .footer_container {
   display: flex;
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 78px;
 }
 
@@ -704,7 +721,7 @@ header {
 }
 
 .discount_info {
-  margin-top: 10px;
+  margin-top: 9px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1139,11 +1156,6 @@ header {
 .htmlacademy_link {
   position: relative;
   display: block;
-  background-image: url("../img/logo-1.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
   opacity: 0.2;
 }
 
@@ -1156,12 +1168,8 @@ header {
 }
 
 .barbershop_link {
+  position: relative;
   display: block;
-  background-image: url("../img/logo-2.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
   opacity: 0.2;
 }
 
@@ -1174,12 +1182,8 @@ header {
 }
 
 .pink_link {
+  position: relative;
   display: block;
-  background-image: url("../img/logo-3.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
   opacity: 0.2;
 }
 
@@ -1192,12 +1196,8 @@ header {
 }
 
 .mishka_link {
+  position: relative;
   display: block;
-  background-image: url("../img/logo-4.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
   opacity: 0.2;
 }
 
@@ -1300,7 +1300,7 @@ header {
   background-color: #ffffff;
   width: 960px;
   min-height: 590px;
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
@@ -1318,8 +1318,23 @@ header {
   justify-content: space-between;
 }
 
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .feedback_show {
   display: flex;
+  animation: show;
+  animation-duration: 1s;
+}
+
+.letter_textarea {
+  padding-top: 20px;
 }
 
 .feedback_close {
@@ -1337,29 +1352,23 @@ header {
   outline: none;
 }
 
-.feedback_close::before, .feedback_close::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 6px;
-  background-color: #fecccd;
-  border-radius: 1px;
-}
-
 .feedback_close::before {
-  transform: rotate(45deg);
+  content: "";
+  background-image: url("../img/nerds_spritesheet.png");
+  top: 5px;
+  left: 49px;
+  width: 21px;
+  height: 21px;
+  background-position: -213px -113px;
+  position: absolute;
 }
 
-.feedback_close::after {
-  transform: rotate(-45deg);
+.feedback_close:hover::before {
+  background-position: -244px -113px;
 }
 
-.feedback_close:hover::before, .feedback_close:hover::after {
-  background-color: #fb565a;
-}
-
-.feedback_close:active::before, .feedback_close:active::after {
-  background-color: #ffeeee;
+.feedback_close:active::before {
+  background-position: -275px -113px;
 }
 
 textarea {
@@ -1368,10 +1377,10 @@ textarea {
 
 .feedback_form input, .letter textarea {
   width: 360px;
-  height: 53px;
+  height: 49px;
   margin-top: 10px;
   padding: 0;
-  padding-left: 15px;
+  padding-left: 13px;
   border: none;
   border: 2px solid #d7dcde;
   border-radius: 5px;
@@ -1380,7 +1389,6 @@ textarea {
   line-height: 18px;
   outline: none;
   color: #b4b9bb;
-  padding-top: 10px;
   resize: none;
 }
 
@@ -1402,6 +1410,7 @@ textarea {
 .feedback_form .letter textarea {
   width: 100%;
   height: 120px;
+  padding: 10px;
   resize: none;
 }
 
@@ -1416,6 +1425,7 @@ textarea {
   text-align: center;
   outline: none;
   border: none;
+  border-radius: 3px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1426,6 +1436,9 @@ textarea {
 
 .form_button:active {
   background-color: #d7373b;
+  background-color: #d7373b;
+  color: #e48789;
+  box-shadow: 0px 4px 0px 0px #c13135 inset;
 }
 
 .feedback_title {
@@ -1434,6 +1447,7 @@ textarea {
   color: #000000;
   font-weight: medium;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .feedback_form label {
@@ -1442,6 +1456,8 @@ textarea {
   color: #000000;
   font-weight: bold;
 }
+
+.letter_textarea {}
 
 @keyframes shake {
   0%, 100% {

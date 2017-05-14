@@ -103,7 +103,7 @@
           </ul>
         </div>
         <div class="statistics">
-          <img src="img/nerds-illustration.png" alt="Цветной логотип" width="360" height="209">
+          <img src="img/nerds-illustration.jpg" alt="Цветной логотип" width="360" height="209">
           <b class="statistics_title">C 2004 года любим точность во всем:</b>
           <div class="statistics_container">
             <div class="statistics_numbers"> <span class="statistic_level">146</span>
@@ -119,10 +119,18 @@
         </div>
       </section>
       <section class="clients">
-        <a class="htmlacademy_link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-        <a class="barbershop_link"></a>
-        <a class="pink_link"></a>
-        <a class="mishka_link"></a>
+        <a class="htmlacademy_link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-1.png" width="260" height="180" alt="HTML Academy">
+        </a>
+        <a class="barbershop_link" href="#">
+          <img src="img/logo-2.png" width="260" height="180" alt="Barbershop Borodinski">
+        </a>
+        <a class="pink_link" href="#">
+          <img src="img/logo-3.png" width="260" height="180" alt="PINK">
+        </a>
+        <a class="mishka_link" href="#">
+          <img src="img/logo-4.png" width="260" height="180" alt="Mishka">
+        </a>
       </section>
     </div>
   </main>
@@ -130,13 +138,14 @@
     <div class="container">
       <div class="contacts_information">
         <span class="contacts_heading">Nёrds Design Studio</span>
-        <p class="contact_adress">191186,
-          Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8</p>
-           <p class="telephone">тел. +7 (812) 275-75-75</p>
+        <p class="contact_adress">191186, Санкт-Петербург</p>
+        <p class="contact_street">ул. Б. Конюшенная, д. 19/8</p>
+        <p class="telephone">тел. +7 (812) 275-75-75</p>
         <a class="btn feedback_link" href="#">Напишите нам</a>
       </div>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1383.6583360804852!2d30.322002195536584!3d59.93882848955536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494784016476" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   </div>
   <footer class="container footer_container">
     <div class="social_container">
@@ -151,68 +160,27 @@
   </footer>
 
   <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
-      <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
-      <h2 class="feedback_title">Напишите нам</h2>
+    <button class="feedback_close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="feedback_title">Напишите нам</h2>
 
-      <div class="feedback_info">
-        <div class="feedback_block">
-          <label for="name">Ваше имя:</label>
-          <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="name">
-        </div>
-        <div class="feedback_block">
-          <label for="mail">Ваш e-mail:</label>
-          <input type="email" placeholder="Для отправки ответа" name="mail" id="mail">
-        </div>
+    <div class="feedback_info">
+      <div class="feedback_block">
+        <label for="name">Ваше имя:</label>
+        <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="name">
       </div>
-      <div class="letter">
-        <label for="letter">Текст письма:</label>
-        <textarea id="letter" name="leter" placeholder="В свободной форме"></textarea>
+      <div class="feedback_block">
+        <label for="mail">Ваш e-mail:</label>
+        <input type="email" placeholder="Для отправки ответа" name="mail" id="mail">
       </div>
-      <button class="form_button btn" type="submit">Отправить</button>
+    </div>
+    <div class="letter">
+      <label for="letter">Текст письма:</label>
+      <textarea class="letter_textarea" id="letter" name="leter" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="form_button btn" type="submit">Отправить</button>
   </form>
 
-  <script>
-    var link = document.querySelector(".feedback_link");
-
-    var popup = document.querySelector(".feedback_form");
-    var close = popup.querySelector(".feedback_close");
-
-    var form = popup.querySelector(".form_button");
-    var login = popup.querySelector("[name=name]");
-    var mail = popup.querySelector("[name=mail]");
-
-    var storage = localStorage.getItem(".feedback_link");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("feedback_show");
-      login.focus();
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("feedback_show");
-      popup.classList.remove("feedback_error");
-    });
-
-    form.addEventListener("click", function(event) {
-      if (!name.value && !mail.value) {
-        event.preventDefault();
-        popup.classList.remove("feedback_error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("feedback_error");
-      }
-    });
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("feedback_show")) {
-          popup.classList.remove("feedback_show");
-          popup.classList.remove("feedback_error");
-        }
-      }
-    });
-  </script>
+  <script src="js/javascript.js"></script>
 
 </body>
 
