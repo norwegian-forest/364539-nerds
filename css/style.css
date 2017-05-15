@@ -167,6 +167,7 @@ body {
 }
 
 .basket {
+  display: block;
   position: relative;
   padding-top: 25px;
   margin-left: 224px;
@@ -178,13 +179,6 @@ body {
 }
 
 .basket:hover {
-  position: relative;
-  padding-top: 25px;
-  margin-left: auto;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 30px;
   color: #fb565a;
 }
 
@@ -419,14 +413,13 @@ body {
 
 .page_title {
   display: block;
-  max-width: 1160px;
+  max-width: 1000px;
   margin: 0;
   padding: 0;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
   padding-left: 214px;
-  padding-right: 214px;
   padding-top: 75px;
 }
 
@@ -633,8 +626,8 @@ body {
   line-height: 18px;
   padding-top: 15px;
   padding-bottom: 16px;
-  padding-right: 57px;
-  padding-left: 57px;
+  padding-right: 54px;
+  padding-left: 61px;
   background-color: #fb565a;
   color: #ffffff;
   cursor: pointer;
@@ -795,7 +788,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 78px;
+  padding-top: 75px;
   padding-bottom: 78px;
 }
 
@@ -805,6 +798,8 @@ body {
 }
 
 .discount_title {
+  display: block;
+  margin-top: 4px;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
@@ -812,7 +807,7 @@ body {
 }
 
 .discount_info {
-  margin-top: 9px;
+  margin-top: 12px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -855,6 +850,7 @@ body {
 }
 
 .checkbox_label {
+  display: block;
   padding-left: 37px;
   position: relative;
   min-height: 30px;
@@ -1472,6 +1468,7 @@ textarea {
 }
 
 .form_button {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1499,6 +1496,7 @@ textarea {
 }
 
 .feedback_title {
+  display: block;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
@@ -1509,6 +1507,7 @@ textarea {
 }
 
 .feedback_form label {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
