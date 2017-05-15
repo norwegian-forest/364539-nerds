@@ -361,6 +361,20 @@ body {
   border-bottom: 2px solid #eeeeee;
 }
 
+.clients img {
+  position: relative;
+  display: block;
+  opacity: 0.2;
+}
+
+.clients img:hover {
+  opacity: 1;
+}
+
+.clients img:active {
+  opacity: 0.1;
+}
+
 .footer_social {
   margin-right: 140px;
 }
@@ -386,7 +400,7 @@ body {
 .main_flex_container {
   display: flex;
   padding-top: 54px;
-  padding-bottom: 74px;
+  padding-bottom: 68px;
 }
 
 .left_sidebar {
@@ -411,7 +425,6 @@ body {
 }
 
 .sort_button {
-  outline: none;
   background: transparent;
   border: none;
   margin: 0;
@@ -468,6 +481,7 @@ body {
 
 .sort_direction {
   margin-left: auto;
+  margin-top: -3px;
 }
 
 .product_container_section {
@@ -480,12 +494,15 @@ body {
 .product_info {
   position: absolute;
   background-color: #eeeeee;
-  bottom: 7px;
+  min-height: 230px;
+  width: 360px;
+  bottom: 0px;
   left: 0px;
   padding-bottom: 47px;
   padding-top: 28px;
   padding-left: 80px;
   padding-right: 80px;
+  display: none;
 }
 
 .product_name {
@@ -497,6 +514,7 @@ body {
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .product_description {
@@ -508,16 +526,26 @@ body {
 
 .item_wrap {
   position: relative;
-  margin-bottom: 24px;
+  height: 617px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: hidden;
+}
+
+.item_wrap:first-child {
+  margin-bottom: 36px;
+}
+
+.item_wrap:nth-child(3) {
+  margin-bottom: 31px;
+}
+
+.item_wrap:last-child {
+  margin-bottom: 32px;
 }
 
 .item_wrap:hover .product_info {
   display: block;
-}
-
-.product {
-  position: relative;
-  margin-bottom: 24px;
 }
 
 .item_wrap:hover {
@@ -534,12 +562,11 @@ body {
   height: 40px;
 }
 
-.product:hover::before {
+.item_wrap:hover::before {
   opacity: 1;
 }
 
 .price_and_shop {
-  outline: none;
   border: none;
   display: block;
   border-radius: 3px;
@@ -553,6 +580,7 @@ body {
   padding-left: 57px;
   background-color: #fb565a;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .price_and_shop:hover {
@@ -619,7 +647,7 @@ body {
 }
 
 .сontacts {
-  padding-top: 53px;
+  padding-top: 58px;
   height: 415px;
   background-position: 50% 50%;
   background-color: #f1efe8;
@@ -711,6 +739,7 @@ body {
 .social_container {
   display: flex;
   margin-right: 129px;
+  font-size: 0;
 }
 
 .discount_title {
@@ -831,7 +860,6 @@ body {
 }
 
 .form_submit {
-  outline: none;
   background: transparent;
   border: none;
   margin: 0;
@@ -846,6 +874,7 @@ body {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .form_submit:hover {
@@ -937,55 +966,41 @@ body {
 .direction_sort_down {
   position: relative;
   background: transparent;
-  outline: none;
   border: none;
+  background-image: url("../img/nerds_spritesheet.png");
+  background-position: -218px -255px;
+  opacity: 0.2;
+  width: 9px;
+  height: 9px;
+  font-size: 0;
 }
 
 .direction_sort_up {
   margin-left: 10px;
   position: relative;
   background: transparent;
-  outline: none;
   border: none;
-}
-
-.direction_sort_down::before {
-  position: absolute;
-  content: "";
-  top: -7px;
-  left: 0;
-  width: 9px;
-  height: 9px;
-  background-image: url("../img/nerds_spritesheet.png");
-  background-position: -218px -255px;
-  opacity: 0.2;
-}
-
-.direction_sort_down:hover::before {
-  opacity: 0.4;
-}
-
-.direction_sort_down:active::before {
-  opacity: 1;
-}
-
-.direction_sort_up::before {
-  position: absolute;
-  content: "";
-  top: -7px;
-  left: 0;
   width: 9px;
   height: 9px;
   background-image: url("../img/nerds_spritesheet.png");
   background-position: -347px -5px;
   opacity: 0.2;
+  font-size: 0;
 }
 
-.direction_sort_up:hover::before {
+.direction_sort_down:hover {
   opacity: 0.4;
 }
 
-.direction_sort_up:active::before {
+.direction_sort_down:active {
+  opacity: 1;
+}
+
+.direction_sort_up:hover {
+  opacity: 0.4;
+}
+
+.direction_sort_up:active {
   opacity: 1;
 }
 
@@ -1153,62 +1168,6 @@ body {
   margin: 0;
 }
 
-.htmlacademy_link {
-  position: relative;
-  display: block;
-  opacity: 0.2;
-}
-
-.htmlacademy_link:hover {
-  opacity: 1;
-}
-
-.htmlacademy_link:active {
-  opacity: 0.1;
-}
-
-.barbershop_link {
-  position: relative;
-  display: block;
-  opacity: 0.2;
-}
-
-.barbershop_link:hover {
-  opacity: 1;
-}
-
-.barbershop_link:active {
-  opacity: 0.1;
-}
-
-.pink_link {
-  position: relative;
-  display: block;
-  opacity: 0.2;
-}
-
-.pink_link:hover {
-  opacity: 1;
-}
-
-.pink_link:active {
-  opacity: 0.1;
-}
-
-.mishka_link {
-  position: relative;
-  display: block;
-  opacity: 0.2;
-}
-
-.mishka_link:hover {
-  opacity: 1;
-}
-
-.mishka_link:active {
-  opacity: 0.1;
-}
-
 .range_filter {
   width: 260px;
   margin: 50px auto;
@@ -1265,6 +1224,7 @@ body {
   font-size: 16px;
   display: inline-block;
   width: 50%;
+  text-transform: uppercase;
 }
 
 .max_price {
@@ -1296,7 +1256,8 @@ body {
   justify-content: space-between;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: -300px;
+  margin-left: -450px;
   position: fixed;
   background-color: #ffffff;
   width: 960px;
@@ -1340,35 +1301,23 @@ body {
 
 .feedback_close {
   position: absolute;
-  width: 30px;
-  height: 6px;
-  top: 74px;
-  left: 800px;
-  width: 22px;
-  height: 22px;
+  top: 79px;
+  left: 849px;
+  width: 21px;
+  height: 21px;
   font-size: 0;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  outline: none;
-}
-
-.feedback_close::before {
-  content: "";
   background-image: url("../img/nerds_spritesheet.png");
-  top: 5px;
-  left: 49px;
-  width: 21px;
-  height: 21px;
   background-position: -213px -113px;
-  position: absolute;
 }
 
-.feedback_close:hover::before {
+.feedback_close:hover {
   background-position: -244px -113px;
 }
 
-.feedback_close:active::before {
+.feedback_close:active {
   background-position: -275px -113px;
 }
 
@@ -1424,7 +1373,6 @@ textarea {
   height: 50px;
   background-color: #fb565a;
   text-align: center;
-  outline: none;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
@@ -1449,6 +1397,7 @@ textarea {
   font-weight: medium;
   margin: 0;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .feedback_form label {
