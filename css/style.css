@@ -179,7 +179,7 @@ body {
 }
 
 .basket:hover {
-  color: #fb565a;
+color: #fb565a;
 }
 
 .basket:active {
@@ -626,8 +626,8 @@ body {
   line-height: 18px;
   padding-top: 15px;
   padding-bottom: 16px;
-  padding-right: 54px;
-  padding-left: 61px;
+  padding-right: 57px;
+  padding-left: 57px;
   background-color: #fb565a;
   color: #ffffff;
   cursor: pointer;
@@ -1481,6 +1481,7 @@ textarea {
   border-radius: 3px;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 39px;
 }
 
 .form_button:hover {
@@ -1512,6 +1513,7 @@ textarea {
   line-height: 18px;
   color: #000000;
   font-weight: bold;
+  margin-top: 33px;
 }
 
 .letter_textarea {}
