@@ -756,6 +756,8 @@ body {
 }
 
 .telephone {
+  display: block;
+  text-decoration: none;
   margin: 0;
   margin-bottom: 34px;
   color: #666666;
